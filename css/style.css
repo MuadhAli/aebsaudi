@@ -17,16 +17,30 @@ body {
 }
 
 
+.iedge {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
 
-    .edge{
-        position: absolute;
-        top: 470px;
-        right: 270px;
-        width: 10px; 
-        height: 10px;
-        z-index: 1000;
+/* Adjust the logo size for different screen sizes */
+@media screen and (max-width: 768px) {
+    .iedge {
+        width: 80px;
+        height: 80px;
     }
+}
 
+@media screen and (max-width: 480px) {
+    .iedge {
+        width: 60px;
+        height: 60px;
+    }
+}
+  
 
 
 
